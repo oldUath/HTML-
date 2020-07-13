@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单标签</title>
+</head>
+
+<body>
+    <!-- action控制请求哪个页面   
+        method是请求方式
+        autocomplete是否自动填充，表单里要有name属性 
+    -->
+    <form action="/xxx" method="post" autocomplete="on">
+        <input type="text" name="username" id="">
+        <input type="submit" value="提交">
+        <button type="submit"><strong>搞起</strong></button>
+        <!-- input和button 区别就是button可以添加其他东西和标签-->
+        <hr>
+
+        <input type="color" name="" id="">颜色
+        <hr>
+
+        <input type="radio" value="" name="yi">单选
+        <input type="radio" value="" name="yi">单选2name属性一样时才能单选
+        <hr>
+
+        <input type="checkbox" value="" name="hoby">多选
+        <input type="checkbox" value="" name="hoby">多选
+    </form>
+</body>
+
+</html>

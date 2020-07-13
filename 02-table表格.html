@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格</title>
+    <style>
+        border table {
+            /* 根据内容自动计算单元格的宽高 */
+            table-layout: auto;
+            /* 合并border */
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <!-- 头部 -->
+        <thead>
+            <!-- 行 -->
+            <tr>
+                <!--表头-->
+                <th></th>
+                <th>小明</th>
+                <th>小红</th>
+                <th>小兰</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>语文</th>
+                <td>70</td>
+                <td>80</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <th>数学</th>
+                <td>70</td>
+                <td>80</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <th>英语</th>
+                <td>70</td>
+                <td>80</td>
+                <td>90</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>语文</th>
+                <td>70</td>
+                <td>80</td>
+                <td>90</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

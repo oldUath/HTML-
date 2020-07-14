@@ -1,0 +1,5 @@
+@charset "UTF-8";/*必须放在第一行；告诉浏览器后面用utf-8解析；charset指的是文件编码*/
+@import url();
+@media (min-width:100px) and (max-width:200px){
+
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = [
+            { '名称': '动物', 'id': 1, 'parent': null },
+            { '名称': '狗', 'id': 2, 'parent': 1 },
+            { '名称': '猫', 'id': 3, 'parent': 1 }
+        ]
+
+        let arr2 = arr.reduce((result, item) => {
+            if (item.parent === null) {
+                result.id = item.id
+                result['名称'] = item['名称']
+            } else {
+                delete item.parent
+                item['children'] = null
+                result.children.push(item)
+            }
+            return result
+
+        }, { 'id': null, children: [] })
+        console.log(arr2)
+    </script>
+</body>
+
+</html>

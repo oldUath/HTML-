@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex布局</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        header {
+            background: grey;
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid black;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            padding-left: 10px;
+            height: 26px;
+            vertical-align: middle;
+        }
+
+        ul {
+            display: flex;
+
+        }
+
+        ul li {
+            line-height: 32px;
+            padding: 4px;
+        }
+
+        .content {
+            width: 800px;
+            border: 1px solid red;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            display: flex;
+
+        }
+
+        .content>aside {
+            width: 200px;
+            height: 400px;
+            background: black;
+
+        }
+
+        .content>main {
+            background: #ccc;
+            flex-grow: 1;
+        }
+
+        .content .ad {
+            width: 100px;
+            height: 400px;
+            background: grey;
+        }
+
+        .imageList {
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        .imageList>.inner {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -12px;
+        }
+
+        .imageList .images {
+            width: 191px;
+            height: 191px;
+            background: black;
+            border: 1px solid green;
+            margin-right: 12px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://static.xiedaimala.com/xdml/cdn/assets/white-logo-1a762b425df663fbccee710fe08d66951cea2fbc0a0350f03446ab30462e739f.png"
+                alt="">
+        </div>
+        <ul>
+            <li>首页</li>
+            <li>课程</li>
+            <li>优惠</li>
+            <li>关于</li>
+        </ul>
+    </header>
+    <div class="content">
+        <aside></aside>
+        <main></main>
+        <div class="ad"></div>
+    </div>
+    <div class="imageList">
+        <div class="inner">
+            <div class="images"></div>
+            <div class="images"></div>
+            <div class="images"></div>
+            <div class="images"></div>
+            <div class="images"></div>
+            <div class="images"></div>
+            <div class="images"></div>
+        </div>
+    </div>
+</body>
+
+</html>

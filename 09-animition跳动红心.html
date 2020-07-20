@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跳动红心</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 添加animation动画 */
+        .heart {
+            margin: 300px 800px;
+            position: relative;
+            /* 变成行内块元素，会从中心位置变大 */
+            display: inline-block;
+            transition: all .3s;
+            animation: jump 0.8s infinite alternate-reverse;
+        }
+
+        @keyframes jump {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1.5);
+            }
+        }
+
+
+
+
+        /* 这是左边的方块 */
+        .left {
+            width: 50px;
+            height: 50px;
+            background: red;
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            transform: rotate(45deg) translate(30px);
+            border-radius: 50px 0 0 40px;
+        }
+
+        .right {
+            width: 50px;
+            height: 50px;
+            background: red;
+            position: absolute;
+            position: absolute;
+            top: -50px;
+            left: 50px;
+            transform: rotate(45deg) translateY(30px);
+            border-radius: 50px 40px 0 0;
+        }
+
+        .buttom {
+            width: 50px;
+            height: 50px;
+            background: red;
+            transform: rotate(45deg);
+            border-radius: 0 0 3px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 由三个正方形做成 -->
+    <div class="heart">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="buttom"></div>
+    </div>
+</body>
+
+</html>
